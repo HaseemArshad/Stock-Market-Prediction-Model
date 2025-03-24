@@ -1,0 +1,10 @@
+pandas
+numpy
+mysql-connector-python
+cassandra-driver
+seaborn
+matplotlib
+plotly
+statsmodels
+tensorflow
+yfinance

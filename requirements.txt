@@ -1,4 +1,5 @@
 pandas
+finnhub-python
 numpy
 mysql-connector-python
 cassandra-driver

@@ -1,7 +1,6 @@
 pandas
 finnhub-python
 numpy
-mysql-connector-python
 cassandra-driver
 seaborn
 matplotlib
@@ -9,3 +8,4 @@ plotly
 statsmodels
 tensorflow
 yfinance
+nbformat

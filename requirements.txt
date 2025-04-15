@@ -10,3 +10,4 @@ tensorflow
 yfinance
 nbformat
 sklearn
+xgboost

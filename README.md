@@ -1,6 +1,6 @@
 # 📈 Stock Market Prediction Model (Real-Time + Historical)
 
-This project ultimately leverges the **XGBoost** Machine Learning Model to predict **Close Price** and **MACD values** across a select group of major tech stocks (the Magnificent 7). It leverages **real-time** and **historical** data into a **unified dataset** to train a robust and generalizable model capable of capturing both short-term momentum and long-term trends. It showcases the end to end steps: extracting -> transforming -> loading -> visualizing -> machine learning -> evaluating
+This project ultimately leverges the **XGBoost** Machine Learning Model to predict **Close Price** and **MACD values** across a select group of major tech stocks (the Magnificent 7). It leverages **real-time** and **historical** data into a **unified dataset** to train a robust and generalizable model capable of capturing both short-term momentum and long-term trends. It showcases the end-to-end steps: **Extracting -> Transforming -> Loading -> Visualizing -> Machine Learning -> Evaluating**
 
 ---
 
@@ -44,10 +44,10 @@ Both historical and real-time datasets are merged into one:
 
 ## Quick Overview of our results:
 
-| Target      | MSE (↓) | R² (↑) |
+| Target      | MSE     | R²     |
 |-------------|---------|--------|
 | **MACD**    | ~3.0    | ~0.97  |
-| **Close**   | ~100    | ~0.99  |
+| **Close Price** | ~100    | ~0.99  |
 
 - The model **captures turning points, trends, and short-term volatility**.
 - Performs **better than LSTM** due to lack of long sequential data in real-time and because XGBoost handles feature-based time series more robustly.

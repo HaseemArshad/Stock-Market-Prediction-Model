@@ -20,6 +20,7 @@ To build a reliable and scalable stock market prediction system that utilizes:
 - `StockMarketPredictionModel.ipynb` - Master notebook including historical end to end, realtime end to end, as well as unified model
 - `stock_data.db` - Our SQLite3 database which stores real time data so it can be queried outside of Stock Market hours (9:30am-4pm Mon-Fri only).
 - `README.md` - Briefing of the project
+- `requirements.txt` - containing all dependencies for our environment other than libogen which would need to be installed for devices running on MacOS only (needed for XGboost)
 
 ---
 
@@ -53,3 +54,5 @@ Both historical and real-time datasets are merged into one:
 
 
 ## How To Run: Clone the repo and open the notebook
+1. If you are running in an IDE (ex: VSCode) be sure to run the pipinstall for requirements.txt
+   

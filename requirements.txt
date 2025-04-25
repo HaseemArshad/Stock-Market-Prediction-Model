@@ -9,6 +9,8 @@ statsmodels
 tensorflow
 yfinance
 nbformat
+datetime
 sklearn
 xgboost
-#macOS devices: additional requirement includes running the following command in the notebook in order to use XGBoost: !brew install libomp 
+#macOS devices: additional requirement includes running the following command in the notebook 
+#in order to use XGBoost: !brew install libomp 

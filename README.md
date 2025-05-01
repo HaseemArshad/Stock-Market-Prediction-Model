@@ -1,6 +1,6 @@
 # 📈 Stock Market Prediction Model (Real-Time + Historical)
 
-This project ultimately leverges the **XGBoost** Machine Learning Model to predict **Close Price** and **MACD values** across a select group of major tech stocks (the Magnificent 7). It leverages **real-time** and **historical** data into a **unified dataset** to train a robust and generalizable model capable of capturing both short-term momentum and long-term trends. It showcases the end-to-end steps: **Extracting -> Transforming -> Loading -> Visualizing -> Machine Learning -> Evaluating**
+This project leverages the **XGBoost** Machine Learning Model to predict **Close Price** and **MACD values** across a select group of major tech stocks (the Magnificent 7). It starts by exploring both **real-time** and **historical** data separately and then merging our analysis into a **unified dataset** to train a robust and generalizable model capable of capturing both short-term momentum and long-term trends. It showcases the end-to-end steps: **Extracting -> Transforming -> Loading -> Visualizing -> Machine Learning -> Evaluating**
 
 ---
 
@@ -22,6 +22,13 @@ To build a reliable and scalable stock market prediction system that utilizes:
 - `README.md` - Briefing of the project
 - `requirements.txt` - containing all dependencies for our environment other than libogen which would need to be installed for devices running on MacOS only (needed for XGboost)
 
+---
+
+## How To Run: Clone the repo or download the full folder and folder contents into Jupyterlab.
+1. The main project file is StockMarketPredictionModel.ipynb so please run that.
+2. If you are running in an IDE (ex: VSCode) be sure to run the first tile of commented-out code so you can pip install requirements.txt.
+3. If you are running in JupyterLab, please run the second code tile, which is commented out, and pip install xgboost, yfinance, finnhub-python, and tensorflow. 
+4. Additionally, if you are on macos please uncomment the tile that requires libomp to be run, and run/let it be downloaded (this is required for XGBoost).
 ---
 
 ## Summary of how the unified model works in the end: 
@@ -52,9 +59,4 @@ Both historical and real-time datasets are merged into one:
 - The model **captures turning points, trends, and short-term volatility**.
 - Performs **better than LSTM** due to lack of long sequential data in real-time and because XGBoost handles feature-based time series more robustly.
 
-
-## How To Run: Clone the repo and open the notebook
-1. The main project file is StockMarketPredictionModel.ipynb so please run that.
-2. If you are running in an IDE (ex: VSCode) be sure to run the pipinstall for requirements.txt
-3. If you are on macos please uncomment the tile that requires libomp to be run, and run/let it be downloaded (this is required for XGBoost)
    

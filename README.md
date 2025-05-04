@@ -34,13 +34,12 @@ To build a reliable and scalable stock market prediction system that utilizes:
 ## Summary of how the unified model works in the end: 
 
 ### 1. **Column Standardization**
-Unifies rolling window columns (`sma_5`, `sma_20` → `sma`) and makes all column names between historical and realtime data compatabile.
+We simplified all rolling window columns (`sma_5`, `sma_20` → `sma`) and made all column names between historical and realtime data compatabile.
 
 ### 2. **Unified Dataset Merge**
 Both historical and real-time datasets are merged into one:
-- An `is_historical` column marks data origin.
-- Missing columns are padded with zeros.
-- Target values (`target_macd`, `target_close`) are created using shifted values and rolling averages.
+- A new `is_historical` column shows if the data was once from historical or real-time.
+- Target values being (`target_macd`, `target_close`) are made again using shifted values and rolling averages.
 
 ### 3. **Training XGBoost**
 - Features and targets are scaled using `StandardScaler`.
@@ -57,6 +56,6 @@ Both historical and real-time datasets are merged into one:
 | **Close Price** | ~100    | ~0.99  |
 
 - The model **captures turning points, trends, and short-term volatility**.
-- Performs **better than LSTM** due to lack of long sequential data in real-time and because XGBoost handles feature-based time series more robustly.
+- The model runs **better than LSTM** due to lack of long sequential data in real-time and because XGBoost handles feature-based time series more effectively.
 
    
